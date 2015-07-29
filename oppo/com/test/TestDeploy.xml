@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oppotestdeploy>
+	<TestUSER>
+		<oppo>
+			<user>13650089145</user>
+			<password>123qwe</password>
+		</oppo>
+		<qq>
+			<user>13650089145</user>
+			<password>123qwe</password>
+		</qq>
+		<sina>
+			<user>13650089145</user>
+			<password>123456qwe</password>
+		</sina>
+		<taobao>
+			<user>13650089145</user>
+			<password>123qwe</password>
+		</taobao>
+	</TestUSER>
+</oppotestdeploy>

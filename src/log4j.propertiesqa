@@ -1,0 +1,63 @@
+# Configure logging for testing: optionally with log file
+log4j.rootLogger=WARN, stdout
+# log4j.rootLogger=WARN, stdout, logfile
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d %p [%c] - %m%n
+log4j.appender.logfile=org.apache.log4j.FileAppender
+log4j.appender.logfile.File=target/spring.log
+log4j.appender.logfile.layout=org.apache.log4j.PatternLayout
+log4j.appender.logfile.layout.ConversionPattern=%d %p [%c] - %m%n
+
+
+###############################################################################
+# Log4J configuration
+#
+# gongzhiling
+# 2014-08-12
+###############################################################################
+
+# -----------------------------------------------------------------------------
+# Set default logger appender as "sysA". Some 3rd-party component will write to
+#  this "sys" log, such as struts, spring, ibatis, paipai java platform, etc.
+# -----------------------------------------------------------------------------
+log4j.rootLogger=info, sysA
+# ----------------------------------------------------------------------------- 
+# Set "run" logger appender as "runA"
+# -----------------------------------------------------------------------------
+log4j.logger.run=info, runA
+log4j.additivity.run=false
+
+# -----------------------------------------------------------------------------
+# Appender "sysA"
+# -----------------------------------------------------------------------------
+#log4j.appender.sysA=org.apache.log4j.ConsoleAppender
+log4j.appender.sysA=org.apache.log4j.RollingFileAppender
+log4j.appender.sysA.MaxFileSize=100MB
+log4j.appender.sysA.MaxBackupIndex=5
+#log4j.appender.sysA.File=/var/log/tomcat/oppo_data/runlog/platform.log
+#log4j.appender.sysA.File=f:/logs/logs_boss_mgmt/app/runlog/platform.log
+log4j.appender.sysA.File=../oppo/oppotest.log
+log4j.appender.sysA.layout=org.apache.log4j.PatternLayout
+log4j.appender.sysA.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} [%-3p] %m (%M@%F:%L)%n
+
+# -----------------------------------------------------------------------------
+# Appender "runA"
+# -----------------------------------------------------------------------------
+log4j.appender.runA=org.apache.log4j.RollingFileAppender
+log4j.appender.runA.MaxFileSize=100MB
+log4j.appender.runA.MaxBackupIndex=5
+#log4j.appender.runA.File=/var/log/tomcat/oppo_data/runlog/run.log
+#log4j.appender.runA.File=f:/logs/logs_boss_mgmt/app/runlog/run.log
+log4j.appender.sysA.File=../oppo/oppotest.log
+log4j.appender.runA.layout=org.apache.log4j.PatternLayout
+log4j.appender.runA.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} [%-3p] %m%n
+ 
+log4j.logger.com.ibatis=debug
+log4j.logger.com.ibatis.common.jdbc.SimpleDataSource=debug
+log4j.logger.com.ibatis.common.jdbc.ScriptRunner=debug
+log4j.logger.com.ibatis.sqlmap.engine.impl.SqlMapClientDelegate=debug
+log4j.logger.java.sql.Connection=debug
+log4j.logger.java.sql.Statement=debug
+log4j.logger.java.sql.PreparedStatement=debug
+log4j.logger.java.sql.ResultSet=error

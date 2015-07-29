@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.TestAccount">
+        <methods>
+          <include name="TestQQSignin"/>
+          <include name="TestSinaSignin"/>
+          <include name="TestOppoSignin"/>
+          <include name="TestTaobaoSignin"/>
+          <include name="TestRetrievePassword"/>
+        </methods>
+      </class> <!-- com.testcase.TestngDemo -->
+
+      <class name="com.test.TestLink">
+        <methods>
+          <include name="Testoppo_com01"/>
+          <include name="Testoppo_com02"/>
+          <include name="Testoppo_com03"/>
+          <include name="Testoppo_com04"/>
+          <include name="Testoppo_com05"/>
+          <include name="Testoppo_com03_01"/>
+          <include name="Testoppo_com03_02"/>
+          <include name="Testoppo_com03_03"/>
+          <include name="Testoppo_com03_04"/>
+          <include name="Testoppo_com03_05"/>
+          <include name="Testoppo_com04_01"/>
+          <include name="Testoppo_com04_02"/>
+          <include name="Testoppo_com04_03"/>
+          <include name="Testoppo_com04_04"/>
+        </methods>
+      </class> <!-- com.testcase.TestngDemo -->
+    </classes>
+    
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
+
+
+

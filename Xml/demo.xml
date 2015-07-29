@@ -1,0 +1,35 @@
+<note>
+<img src="./img/computer.gif"></img>
+<img src="./img/d.gif"></img>
+<img src="./img/sef.gif"></img>
+<img src="./img/caw.gif"></img>
+<to>George</to>
+<from>John</from>
+	<oppo>
+		<test1>
+          <include name="Testoppo_com01"/>
+          <include name="Testoppo_com02"/>
+          <include name="Testoppo_com03"/>
+          <include name="Testoppo_com04"/>
+          <include name="Testoppo_com05"/>
+          <include name="Testoppo_com03_01"/>
+          <include name="Testoppo_com03_02"/>
+          <include name="Testoppo_com03_03"/>
+          <include name="Testoppo_com03_04"/>
+          <include name="Testoppo_com03_05"/>
+          <include name="Testoppo_com04_01"/>
+          <include name="Testoppo_com04_02"/>
+          <include name="Testoppo_com04_03"/>
+          <include name="Testoppo_com04_04"/>
+		</test1>
+		<test1>a</test1>
+		<test1>dd</test1>
+		<test2></test2>
+		<test1>awda</test1>
+		<test1>awdwad</test1>
+		<test1>awdwad</test1>
+		<test1>awdwadawgser</test1>
+	</oppo>
+<heading>Reminder</heading>
+<body>Don't forget the meeting!</body>
+</note>
